@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head> <!--CABEÇA-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Estante modular vertical em madeira. Livros, sapatos, decoração.">
+    <title>Estante em madeira</title>
+</head>
+
+<body> <!--CORPO-->
+
+    <header> <!--CABEÇALHO-->
+        <h1>Estante Modular Vertical</h1>
+        <h3><em>Organize com estilo, decore com liberdade.</em></h3>
+    </header>
+
+    <main> <!--PRINCIPAL-->
+        <section> <!--INTRODUÇÃO-->
+            <p>A queridinha de nossos clientes! Versátil, elegante e funcional, ela se adapta perfeitamente a
+                diferentes ambientes e estilos de decoração.</p>
+            <figure>
+                <img src="Imagens/photo.estante.png" alt="3 Estantes Modulares Verticais nas cores castanheira, natural e preta." width="400">
+                <figcaption><em>Estante modular vertical (08 módulos).</em></figcaption>
+            </figure>
+        </section>
+
+        <section> <!--PERSONALIZANDO ESTANTE-->
+            <h2>Personalize sua estante</h2>
+            <form>
+                <!--MÓDULOS (DROP DOWN)-->
+                <p>Quantidade de módulos desejada:</p>
+                <select name="modulos" id="mod">
+                    <option value=""></option>
+                    <option value="4 modulos">4 módulos</option>
+                    <option value="8 modulos">8 módulos</option>
+                    <option value="12 modulos">12 módulos</option>
+                </select>
+                <!--TIPO de MADEIRA (RADIO - multiple choice)-->
+                <p>Tipo da madeira:</p>
+                <figure>
+                    <img src="Imagens/wood.pinus.jpg" alt="pinus" width="80">
+                    <input type="radio" value="Pinus" name="wood" id="w1">
+                    <label for="w1">Pinus</label>
+
+                    <img src="Imagens/wood.cedrinho.jpg" alt="cedrinho" width="80">
+                    <input type="radio" value="Cedrinho" name="wood" id="w2">
+                    <label for="w2">Cedrinho</label>
+
+                    <img src="Imagens/wood.muiracatiara.jpg" alt="muiracatiara" width="80">
+                    <input type="radio" value="Muiracatiara" name="wood" id="w3">
+                    <label for="w3">Muiracatiara</label>
+
+                    <img src="Imagens/wood.roxinho.jpg" alt="roxinho" width="80">
+                    <input type="radio" value="Roxinho" name="wood" id="w4">
+                    <label for="w4">Roxinho</label>
+                </figure>
+                <p><em>*as cores e característica naturais da madeira podem variar conforme cada lote, assim como a tonalidade exibida em diferentes telas.</em></p>
+
+                <!--COR/ACABAMENTO (RADIO - multiple choice)-->
+                <p>Cor e/ou Acabamento:</p>
+                <p>Pinus</p>
+                <input type="radio" value="Natural" name="cor" id="cor1">
+                <label for="cor1">Natural</label>
+
+                <input type="radio" value="Verniz" name="cor" id="cor2">
+                <label for="cor2">Verniz</label>
+
+                <input type="radio" value="Branco" name="cor" id="cor3">
+                <label for="cor3">Branco</label>
+
+                <input type="radio" value="Preto" name="cor" id="cor4">
+                <label for="cor4">Preto</label>
+
+                <input type="radio" value="Castanheira" name="cor" id="cor5">
+                <label for="cor5">Castanheira</label>
+
+                <input type="radio" value="Imbuia" name="cor" id="cor6">
+                <label for="cor6">Imbuia</label>
+
+                <p>Cedrinho / Muiracatiara / Roxinho</p>
+                <input type="radio" value="Natural" name="cor" id="cor7">
+                <label for="cor7">Natural</label>
+
+                <input type="radio" value="com Óleo" name="cor" id="cor8">
+                <label for="cor8">com Óleo</label>
+                
+            <!--ADICIONAIS (CHECKBOX)-->
+                <p>Adicionais:</p>
+                <figure>
+                    <img src="Imagens/add.fixador.jpg" alt="Adicionais.fixador" width="80"><br>
+                    <input type="checkbox" value="Conjunto para fixacao" name="add" id="add1">
+                    <label for="add1">Conjunto para fixação</label><br><br>
+
+                    <img src="Imagens/add.chanfro.jpg" alt="Adicionais.chanfro" width="130"><br>
+                    <input type="checkbox" value="Borda chanfrada" name="add" id="add2">
+                    <label for="add2">Bordas chanfradas</label><br><br>
+
+                    <img src="Imagens/add.angulo.jpg" alt="Adicionais.angulo" width="130"><br>
+                    <input type="checkbox" value="Acabamento em angulo" name="add" id="add3">
+                    <label for="add3">Acabamento em ângulo</label><br>
+                </figure>
+            </form>
+        </section>
+
+        <section> <!--PRAZO de ENTREGA-->
+            <h2>Prazo de entrega</h2>
+            <table border="3">
+                <thead>
+                    <tr>
+                        <th>Módulos</th>
+                        <th>Prazo</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>4 módulos</td>
+                        <td>8 dias</td>
+                    </tr>
+
+                    <tr>
+                        <td>8 módulos</td>
+                        <td>12 dias</td>
+                    </tr>
+
+                    <tr>
+                        <td>12 módulos</td>
+                        <td>16 dias</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="2"><em>*prazo de produção e postagem do pedido.</em></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section> <!--FORMULÁRIO de PEDIDO-->
+            <h2>Finalize seu pedido:</h2>
+            <form>
+                <fieldset>
+                    <legend>Pedido</legend>
+
+                    <label for="name">Nome: </label>
+                    <input type="text" name="nome" id="name"><br><br>
+
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="email" id="email"><br><br>
+
+                    <label for="password">Senha:</label>
+                    <input type="password" name="password" id="password" placeholder="Digite aqui sua senha..."><br><br>
+
+                    <label for="comentarios">Comentários</label>
+                    <textarea name="comentarios" id="comentarios" rows="4" cols="50" placeholder="Digite aqui seu comentário ou observações..."></textarea><br><br>
+
+                    <button onclick="alert('Pedido enviado com sucesso. Agradecemos sua preferência.')">Realizar pedido</button><br>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer><!--RODAPÉ-->
+        <hr>
+        <p><strong>WS Art&Decor</strong></p>
+        <p><em>Transformando espaços com arte e estilo.</em></p>
+        <img src="Imagens/soon.whatsapp.png" alt="whatsapp" width="30">
+        <p>+55 12 98105-6787</p>
+        <img src="Imagens/soon.insta.retro.png" alt="insta" width="40">
+        <p>#wsartedecor123</p>
+        <p>&copy; Todos os direitos reservados &copy;</p>
+    </footer>
+</body>
+</html>
